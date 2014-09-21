@@ -1,7 +1,5 @@
-</head>
-<body onload="jikoku()">
-<form name="F1" action="#">
-<input type="text" name="T1" size=50>
-</form>
-</body>
-</html>
+function jikoku() {
+    dd = new Date();
+    document.F1.T1.value = dd.toLocaleString();
+    window.setTimeout("jikoku()", 1000);
+}
